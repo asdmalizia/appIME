@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar Notícia</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="fundo"> 
+    <div class="background">
+  <ion-item style="border-radius: 8% 8% 8% 8%">
+    <ion-input type="text" [(ngModel)]="title" placeholder="Iniciativa/Projeto" class="iniciativa"></ion-input>
+  </ion-item>
+  <br>
+    <ion-item style="border-radius: 8% 8% 8% 8%" class="subject">
+      <ion-input type="text" [(ngModel)]="subject" placeholder="Tema"></ion-input>
+    </ion-item> 
+    <br>
+    <ion-item style="border-radius: 8% 8% 8% 8%" class="content">
+      <ion-input type="text" [(ngModel)]="content" placeholder="Mensagem"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item style="border-radius: 8% 8% 8% 8%" class="additional_info" >
+      <ion-input type="text" [(ngModel)]="additional_info" placeholder="Detalhes" ></ion-input>
+    </ion-item>
+    <br>
+  <button ion-button color="light" type="submit" (click)="submit()">Adicionar Notícia</button>
+</div>
+
+</ion-content>
